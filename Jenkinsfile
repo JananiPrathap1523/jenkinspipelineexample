@@ -15,7 +15,7 @@ pipeline {
         }
         stage('Build1') {
             steps {
-                dir("/var/lib/jenkins/workspace/janani") {
+                dir("/var/lib/jenkins/workspace/firstpipeline") {
                 sh 'mvn -B -DskipTests clean package'
                 }
             
